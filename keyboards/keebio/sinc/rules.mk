@@ -1,1 +1,2 @@
 DEFAULT_FOLDER = keebio/sinc/rev1
+UNICODEMAP_ENABLE = yes
