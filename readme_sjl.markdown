@@ -36,3 +36,14 @@ This will produce `keebio_sinc_rev3_sjl.uf2`.
 Hold reset button on keyboard for 1s, and it will remount itself as a Raspberry
 PI USB drive (lol).  Drag the `uf2` file onto it and it will notice and reboot
 itself.
+
+## Sinc Rev4 (Macrodata)
+
+    ./venv/bin/qmk compile -kb keebio/sinc/rev4 -km sjl
+
+This will produce `keebio_sinc_rev4_sjl.uf2`.
+
+Hold reset button on keyboard for 1s, and it will remount itself as a Raspberry
+PI USB drive (lol).  Drag the `uf2` file onto it and it will notice and reboot
+itself.
+
