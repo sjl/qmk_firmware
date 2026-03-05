@@ -1,3 +1,15 @@
+# Setup
+
+Need a venv for the QMK CLI:
+
+    python3 -m venv venv
+    ./venv/bin/pip install --upgrade pip
+    ./venv/bin/pip install qmk
+
+Install deps:
+
+    ./venv/bin/qmk setup
+
 # Configuration
 
 Keymap files are in:
@@ -8,14 +20,16 @@ Config files (e.g. to disable RGB Gamer Crud™) are in:
 
     keyboards/keebio/sinc/*
 
-# Sinc Rev2 (Space Cadet)
+# Boards
+
+## Sinc Rev2 (Space Cadet)
 
     qmk compile -kb keebio/sinc/rev2 -km sjl
     qmk flash -kb keebio/sinc/rev2 -km sjl
 
-# Sinc Rev3 (Godspeed)
+## Sinc Rev3 (Godspeed)
 
-    qmk compile -kb keebio/sinc/rev3 -km sjl
+    ./venv/bin/qmk compile -kb keebio/sinc/rev3 -km sjl
 
 This will produce `keebio_sinc_rev3_sjl.uf2`.
 
